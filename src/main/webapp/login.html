@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>CBoard | Starter</title>
+  <title>BI Login</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -23,7 +23,8 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <span><b>CB</b></span><span>oard</span>
+    <!-- <span><b>CB</b></span><span>oard</span> -->
+    <img src="data:image/png;base64,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" style="width: 192px;">
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
