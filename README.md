@@ -102,10 +102,6 @@ If you like our product, you can start from our community version. With the supp
 In future, without affecting the company's business, it will gradually open more basic development infrastructure.
 Any bugs or question please feel free to post at Github[Issue system](https://github.com/TuiQiao/CBoard/issues)
 
-## 正在招聘
-我们正在寻找在相关领域有技术有热情的**前端开发**小伙伴, 与**产品销售**小伙伴, 如果您看好公司发展前景, 请将您的简历发送到: *hr@chuguotech.com*, 如果你足够优秀有机会成为我们技术合伙人哦!
-[职位链接](http://www.chuguotech.com/2)
-
 ## More Document
 - [帮助文档](http://peter_zhang921.gitee.io/cboard_docsify/#/zh-cn/)
 - [Document](https://tuiqiao.github.io/CBoardDoc/#/en-us/)
