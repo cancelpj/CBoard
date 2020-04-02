@@ -56,13 +56,16 @@ public class LocalSecurityFilter implements Filter {
             context = hsr.getLocalPort() + hsr.getContextPath();
             schema = hsr.getScheme();
         }
+        // render.html 页面模拟id为 1 的账号登录
         if ("/render.html".equals(hsr.getServletPath())) {
-            String sid = hsr.getParameter("sid");
+            // String sid = hsr.getParameter("sid");
             try {
-                String uid = sidCache.get(sid);
+                // String uid = sidCache.get(sid);
+                String uid = "1";
                 if (StringUtils.isNotEmpty(uid)) {
                     User user = new User("shareUser", "", new ArrayList<>());
-                    user.setUserId(sidCache.get(sid));
+                    // user.setUserId(sidCache.get(sid));
+                    user.setUserId(uid);
                     SecurityContext context = SecurityContextHolder.getContext();
                     context.setAuthentication(new ShareAuthenticationToken(user));
                     hsr.getSession().setAttribute("SPRING_SECURITY_CONTEXT", context);
@@ -71,6 +74,7 @@ public class LocalSecurityFilter implements Filter {
                 LOG.error("", e);
             }
         }
+
         filterChain.doFilter(servletRequest, servletResponse);
     }
 
